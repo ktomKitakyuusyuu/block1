@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ピンポンゲーム</title>
+	<style>
+		canvas{
+			background: #222;
+			color: skyblue;
+			display: block;
+			margin: 0 auto;
+		}
+		main{
+			width: 270px;
+			background: slategray;
+			color:snow;
+			margin: 0 auto;
+			padding: 5px;
+			user-select: none;
+		}
+		#resetButton{
+			position: relative;
+			right: 0;
+		}
+
+		#scoreBoad{
+			background: #000;
+			text-align: center;
+			padding: 0px;
+			border: #fff solid 2px;
+			margin-bottom: 4px;
+		}
+	</style>
+</head>
+<body>
+	<canvas width="280" height="280">
+		canvas not supported
+	</canvas>
+	<main>
+		<div id='scoreBoad'>SCORE: 0</div>
+		<summary>ゲームの説明 <button id='resetButton'>Reset</button></summary>
+		<details open>
+			ラケットを左右に動かしてボールを打ち返して下さい。
+			一回打ち返すごとに１点が加算されます。
+			これだけ！
+			<!-- <input type="text" value='50' id='inputPW'> -->
+		</details>
+	</main>
+	<script src="js/main.js"></script>
+</body>
+</html>
