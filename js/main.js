@@ -77,6 +77,9 @@
 			document.addEventListener('mousemove',e=>{
 				this.mouseX=e.clientX;
 			});
+			document.addEventListener('touchmove',e=>{
+				this.mouseX=e.clientX;
+			});
 			document.addEventListener('keydown',e=>{
 				if (e.key=='Right' || e.key=='ArrowRight'){
 					this.x+=this.keyVx;
